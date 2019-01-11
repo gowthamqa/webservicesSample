@@ -5,7 +5,7 @@
     <classes>
       <class name="com.qa.tests.TestF12010">
         <methods>
-          <include name="getCountry2008"/>
+          <include name="getDriverCount"/>
         </methods>
       </class> <!-- com.qa.tests.TestF12010 -->
     </classes>
