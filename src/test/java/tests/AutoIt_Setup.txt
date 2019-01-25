@@ -1,0 +1,37 @@
+
+1. Download autoit installer
+	https://www.autoitscript.com/site/autoit/downloads/
+2. Download jacob
+	Normal Project: https://sourceforge.net/projects/jacob-project/files/ (Latest 1.19)
+	Maven project : https://sourceforge.net/projects/jacob-project/files/jacob-project/1.14.3/
+3.Download AutoITX downloads
+	Normal : Add jar file to build path(http://central.maven.org/maven2/de/openkeyword/autoit/0.1.20/autoit-0.1.20.jar)
+	Maven : https://mvnrepository.com/artifact/de.openkeyword/autoit/0.1.13
+	
+	OneTime Operation:
+	
+	Goto AutoITX folder (C:\Program Files (x86)\AutoIt3\AutoItX)
+	Verify "AutoItX3_x64.dll" is available or not. 
+	Go to command prompt as administrator: and got cd C:\Program Files (x86)\AutoIt3\AutoItX and run command "Regsvr32 AutoItX3_x64.dll"
+	we will prompt window with sucess message
+	
+
+
+====================
+
+	step1: cfreate a normal project 
+	step2: add jacob and autoit jars
+	step3: Initialization
+		public void test() {
+		File file = new File(".\\src\\test\\java\\resources\\jacob-1.14.3\\jacob-1.14.3-x64.dll");
+		System.setProperty(LibraryLoader.JACOB_DLL_PATH, file.getAbsolutePath());
+		AutoItX auto = new AutoItX();
+		}
+		
+	Maven:
+		Add dependancies--> jacob(https://mvnrepository.com/artifact/net.sf.jacob-project/jacob/1.14.3)
+							Autoit(https://mvnrepository.com/artifact/de.openkeyword/autoit/0.1.13)
+	
+		
+	
+	
